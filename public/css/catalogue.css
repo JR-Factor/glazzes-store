@@ -1,0 +1,85 @@
+body{
+  background: url("../img/catalogue-bg.jpg") #ccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container{
+  width: 100%;
+}
+.items{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.items h2{
+  text-align: center;
+  font-size: 4em;
+  color: #1e1e1e;
+  margin-bottom:20px;
+}
+.items .item{
+  position: relative;
+  width: 30%;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  margin: 15px 20px 40px;
+
+}
+
+.items .item img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all .18s ease;
+  vertical-align: middle;
+}
+.items .item .item-text{
+  width: 99.8%;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+  padding: 7px;
+  z-index: -1;
+  transition: all .18s ease;
+  transform: translateY(-100%);
+}
+.items .item:hover img{
+  filter: grayscale(0);
+}
+.items .item:hover .item-text{
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .items .item{
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .items .item img{
+    filter: none;
+  }
+  .items .item .item-text{
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width:630px){
+  .items{
+    width: 90%;
+  }
+  .items h2{
+    font-size: 10vw;
+  }
+  .items .item{
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+  }
+}

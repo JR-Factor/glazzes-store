@@ -1,0 +1,232 @@
+/* CONTACT PAGE */
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background:url("../img/contact-bg.jpg") #ccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-form {
+  position: absolute;
+  width: 40%;
+  min-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding: 20px;
+}
+input,textarea,button{
+  font-family: Poppins;
+  display: block;
+  margin-bottom: 30px;
+}
+input{
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, .5);
+  color:#fff;
+  border: 2px solid #ccc;
+  outline: 0;
+}
+textarea{
+    font-family: Poppins;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    resize: none;
+    background-color: rgba(50, 50, 50, .5);
+    color:#fff;
+    border: 2px solid #ccc;
+    outline: 0;
+}
+::placeholder{
+  color: #949494;
+}
+h2{
+  font-size: 4em;
+  color: #fff;
+  margin-bottom:20px;
+}
+button{
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background: rgba(50, 50, 50, 1);
+  color: #fff;
+  outline: 0;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: all .1s;
+  width: 100%;
+}
+button:active{
+  border: 2px solid #000;
+  background: #ccc;
+  color: #1e1e1e;
+}
+.social-media{
+  margin-top: 15px;
+  width: 100%;
+}
+.social-media ul{
+  list-style: none;
+}
+.social-media ul li{
+  position: relative;
+  display: inline-block;
+  font-size: 1.7em;
+  background: #e5e5e5;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+.social-media ul li:not(:last-child){
+  margin-right: 10px;
+}
+.social-media ul li a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #1e1e1e;
+  padding: 11px 22px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+.social-media ul li:hover{
+  background-color: #1e1e1e;
+}
+.social-media ul li:hover a{
+  color: #e5e5e5;
+}
+.container footer{
+  transform: translateY(0%);
+}
+@media screen and (max-width: 450px) {
+  .container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:url("../img/contact-bg.jpg") #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .contact-form {
+    position: absolute;
+    width: 100%;
+    min-width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px;
+  }
+  input,textarea,button{
+    font-family: Poppins;
+    display: block;
+    margin-bottom: 10px;
+  }
+  input{
+    width: 100%;
+    padding: 7px;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, .5);
+    color:#fff;
+    border: 2px solid #ccc;
+    outline: 0;
+  }
+  textarea{
+      font-family: Poppins;
+      width: 100%;
+      height: 110px;
+      padding: 7px;
+      font-size: 1em;
+      border-radius: 10px;
+      resize: none;
+      background-color: rgba(50, 50, 50, .5);
+      color:#fff;
+      border: 2px solid #ccc;
+      outline: 0;
+  }
+  ::placeholder{
+    color: #949494;
+  }
+  h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom:10px;
+  }
+  button{
+    padding: 7px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 1em;
+    background: rgba(50, 50, 50, 1);
+    color: #fff;
+    outline: 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all .1s;
+    width: 100%;
+  }
+  button:active{
+    border: 2px solid #000;
+    background: #ccc;
+    color: #1e1e1e;
+  }
+  .social-media{
+    margin-top: 15px;
+    width: 100%;
+  }
+  .social-media ul{
+    list-style: none;
+  }
+  .social-media ul li{
+    position: relative;
+    display: inline-block;
+    font-size: 1.7em;
+    background: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .15s ease;
+  }
+  .social-media ul li:not(:last-child){
+    margin-right: 10px;
+  }
+  .social-media ul li a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #1e1e1e;
+    padding: 11px 22px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all .15s ease;
+  }
+  .social-media ul li:hover{
+    background-color: #1e1e1e;
+  }
+  .social-media ul li:hover a{
+    color: #e5e5e5;
+  }
+  .container footer{
+    transform: translateY(0%);
+  }
+}
