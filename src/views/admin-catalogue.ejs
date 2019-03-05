@@ -1,0 +1,52 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GLAZZES</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/catalogue.css">
+    <link rel="stylesheet" href="/public/css/admin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <% include partials/navigation %>
+
+    <!-- LogOut Button -->
+    <% include partials/logout-button %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="content">
+        <h1>Items</h1>
+        <a href="/admin/upload" class="up-btn">Upload</a>
+        <div class="items grid">
+          <% images.forEach(function(image){ %>
+            <div class="grid-item">
+              <div class="item">
+                <a href="/admin/edit/<%= image._id %>">
+                  <img src="<%= image.photoUrl %>" alt="">
+                </a>
+                <div>
+                  <a href="/admin/stock/<%= image._id %>" class="<%= image.stock ? 'stock' : 'no-stock' %>">
+                    <%= image.stock ? 'On Stock' : 'No Stock' %>
+                  </a>
+                </div>
+                <div>
+                  <a href="/admin/<%= image._id %>/delete"><i id="delete" class="far fa-trash-alt"></i></a>
+                </div>
+                <div class="item-text">
+                  <p><%= image.name %></p>
+                </div>
+              </div>  
+            </div>
+          <% }) %>
+        </div>
+      <!-- FOOTER -->
+      <footer>
+          <h3>JuanRM | &copy; Copyright 2018</h3>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -3,36 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>GLAZZES</title>
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/contact.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav>
-      <div class="logo">
-        <a href="./index.html"><h4>Glazzes</h4></a>
-      </div>
-      <input type="checkbox" name="menu" id="menu" value="">
-      <label for="menu" class="nav-btn">
-        <div class="menu-bars">
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-      </label>
-      <div class="navigation">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./catalogue.html">Catalogue</a></li>
-          <li class="buy-btn"><a href="#">Buy</a></li>
-        </ul>
-      </div>
-    </nav>
+    <% include partials/navigation %>
+    
     <!-- CONTACT FORM -->
     <div class="container">
       <div class="contact-form">
@@ -40,7 +20,7 @@
           <h2>Contact us</h2>
           <input type="email" name="email" value="" placeholder="Email" required autofocus>
           <input type="text" name="text" value="" placeholder="Name" required>
-          <textarea name="message" rows="8" cols="80" placeholder="Message" required></textarea>
+          <textarea name="message" rows="3" cols="80" placeholder="Message" required></textarea>
           <button type="submit" name="button">Send</button>
         </form>
         <div class="social-media">
@@ -56,7 +36,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <h3>JuanRM | &copy Copyright 2018</h3>
+        <h3>JuanRM | &copy; Copyright 2018</h3>
       </footer>
     </div>
   </body>

@@ -1,0 +1,166 @@
+.container{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.container footer{
+	transform: translateY(0%);
+}
+
+body{
+	background-color: #303F9F;
+	background-image: url();
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.login h3{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+.login input,.login button{
+		display: block;
+		font-size: 1.5em;
+		padding: 7px;
+		border-radius: 5px;
+}
+
+.login input{
+	margin-bottom: 20px;
+}
+
+.login button{
+	margin: 0 auto;
+}
+
+#LogOut{
+	color: #fff;
+	position: fixed;
+	top: 30%;
+	left: 0;
+	padding: 15px;
+	background: #d63031;
+	transition: .1s;
+	z-index: 1000;
+}
+
+.content{
+	text-align: center;
+}
+
+.content h1{
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+.content .up-btn{
+	padding: 12px;
+	background: springgreen;
+	color: #000;
+	border-radius: 5px; 
+	text-decoration: none;
+}
+
+.items{
+	margin-top: 50px;
+}
+
+
+.items .item .stock{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 10px;
+	background: #A3CB38;
+	color: #000;
+	text-decoration: none;
+  }
+
+  .items .item .stock:hover{
+	background: #ccc;
+  }
+  .items .item .no-stock{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 10px;
+	background: #ccc;
+	color: #000;
+	text-decoration: none;
+  }
+  .items .item .no-stock:hover{
+	background: #A3CB38;
+  }
+
+.items .item #delete{
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px;
+	background: #d63031;
+	transition: .1s;
+	z-index: 1000;
+}
+.items .item #delete:hover{
+	background: #e17055;
+}
+
+.upload-form , .edit-form{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.upload-form input,.upload-form textarea , .edit-form input , .edit-form textarea{
+	display: block;
+	margin: 20px auto;
+	padding: 5px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	width: 100%;
+}
+.upload-form textarea , .edit-form textarea{
+	resize: vertical;
+}
+.upload-form button , .edit-form button{
+	padding: 10px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.upload-form input , .edit-form input{
+	display: block;
+	margin: 20px auto;
+	padding: 5px;
+	font-size: 1.2em;
+	border-radius: 5px;
+}
+
+.edit-form{
+	top:50%;
+	text-align: left;
+	width: 400px;
+}
+
+.edit-form img{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	box-shadow: 1px 3px 10px #000;
+}
+
+.edit-form input#image{
+	margin-top:0;
+}
+
+.edit-form button{
+	width: 100%;
+}

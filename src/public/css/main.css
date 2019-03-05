@@ -3,10 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  width: 100%;
+  min-height: 100vh;
+}
 body{
   font-family: 'Poppins', sans-serif;
-  min-width: 100%;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 nav{
   position: fixed;
@@ -158,6 +162,7 @@ div.description{
   position: relative;
   width: 100%;
   margin: 0 auto;
+  min-height: 100%;
 }
 article{
   margin: 0 auto;
@@ -165,60 +170,30 @@ article{
 article .content{
   width: 80%;
   margin: 0 auto;
-}
-article .first-cut {
-  width: 45%;
-  display: inline-block;
-}
-article .second-cut{
-  width: 45%;
-  display: inline-block;
-}
-.about , .quality{
-  padding: 60px;
-  display: block;
-  position: relative;
-  width: 100%;
-  min-height:500px;
-  overflow: hidden;
-}
-.about .first-cut {
-  float: left;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40%;
-}
-.about .second-cut{
-  position: absolute;
-  top: 50%;
-  float: right;
-  transform: translateY(-50%);
-  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
 
+.about , .quality{
+  padding: 60px;
+}
  h2{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .about .first-cut p{
   font-size: 1.5vw;
 }
 .about .second-cut{
-  height: 500px;
   position: relative;
-  float: right;
-  transform: translateY(0%);
 }
 .about img{
   width: 90%;
   position: absolute;
-  top: 50%;
-  right: 0;
+  top:50%;
   transform: translateY(-50%);
   box-shadow: 2px 3px 5px #000;
-  transition: .15s;
-  transition-delay: .06s;
 }
 .quality{
   /* margin-top: 50px; */
@@ -226,32 +201,24 @@ article .second-cut{
   color: #fff;
 }
 .quality .second-cut{
-  text-align: right;
-  position: absolute;
-  top: 50%;
-  float: right;
-  transform: translateY(-50%);
-  width: 40%;
+  
 }
 .quality .second-cut h2{
   font-weight: 200;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .quality .second-cut p{
   font-size: 1.5vw;
   font-weight: 100;
 }
 .quality .first-cut{
-  height: 500px;
   position: relative;
-  float: left;
   /* transform: translateY(-10%); */
 }
 .quality img{
   width: 90%;
   position: absolute;
   top: 50%;
-  left: 0;
   transform: translateY(-50%);
   box-shadow: 2px 3px 5px #000;
   transition: .15s;

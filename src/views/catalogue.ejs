@@ -1,0 +1,40 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GLAZZES</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/catalogue.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <% include partials/navigation %>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h2>All Our Models</h2>
+      <div class="items grid">
+        <% images.forEach(function(image){ %>
+          <a href="/catalogue/item/<%= image._id %>">
+            <div class="item">
+              <img src="<%= image.photoUrl %>" alt="">
+              <div class="<%= image.stock ? 'stock' : 'no-stock' %>">
+                  <%= image.stock ? 'On Stock' : 'No Stock' %>
+              </div>
+              <div class="item-text">
+                <p><%= image.name %></p>
+              </div>
+            </div>  
+          </a>
+        <% }); %>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <h3>JuanRM | &copy; Copyright 2018</h3>
+      </footer>
+    </div>
+  </body>
+</html>

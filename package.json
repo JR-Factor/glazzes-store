@@ -1,0 +1,32 @@
+{
+  "name": "glazzes",
+  "version": "1.0.0",
+  "description": "first store practice (no backend)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JR-Factor/glazzes-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JR-Factor/glazzes-store/issues"
+  },
+  "homepage": "https://github.com/JR-Factor/glazzes-store#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "mongoose": "^5.4.2",
+    "multer": "^1.4.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

@@ -3,34 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>GLAZZES</title>
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="/public/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav>
-      <div class="logo">
-        <a href="./index.html"><h4>Glazzes</h4></a>
-      </div>
-        <input type="checkbox" name="menu" id="menu" value="">
-        <label for="menu" class="nav-btn">
-          <div class="menu-bars">
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
-        </label>
-      <div class="navigation">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./catalogue.html">Catalogue</a></li>
-          <li class="buy-btn"><a href="#">Buy</a></li>
-        </ul>
-      </div>
-    </nav>
+    <% include partials/navigation %>
 
     <!-- MAIN TITLE -->
     <header>
@@ -52,14 +31,14 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="second-cut">
-            <img src="./public/img/about-img.jpg" alt="">
+            <img src="/public/img/about-img.jpg" alt="">
           </div>
         </div>
       </article>
       <article class="quality">
         <div class="content">
           <div class="first-cut">
-            <img src="./public/img/quality.jpg" alt="">
+            <img src="/public/img/quality.jpg" alt="">
           </div>
           <div class="second-cut">
             <h2>Highest Quality</h2>
